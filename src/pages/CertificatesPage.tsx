@@ -304,7 +304,7 @@ export default function CertificatesPage() {
               {/* Modal Image Frame */}
               <div className="cert-modal-image-frame">
                 <img
-                  src={selectedCert.image}
+                  src={selectedCert.fullImage || selectedCert.image}
                   alt={`${selectedCert.title} certificate document`}
                   className="cert-modal-image"
                 />
